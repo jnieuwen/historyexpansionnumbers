@@ -4,9 +4,9 @@ function h() {
     do
         echo -n $JNIlinenum:" "
         JNIcounter=0
-        echo ${history[$JNIitem]} | xargs -n1 | while read -r line
+        echo ${history[$JNIitem]} | xargs -n1 | while read -r JNIline
         do
-            echo -n $JNIcounter:\'$line\'"  "
+            echo -n $JNIcounter:\'$JNIline\'"  "
             JNIcounter=$((JNIcounter+1))
         done
         echo
